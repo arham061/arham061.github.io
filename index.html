@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101113">
+  <meta name="description" content="Arham Shahzad — AI and robotics master's student. A few things I've built in computer vision, audio learning, and robotics.">
+  <title>Arham Shahzad · AI, robots & a little curiosity</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#home" aria-label="Arham Shahzad home">as<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="#work">The work</a><a href="#about">The human</a><a href="#contact">Say hello <span aria-hidden="true">✳</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-star" aria-hidden="true">✳</span> Hello there. I'm Arham.</p>
+        <h1 id="intro-title">A little AI.<br>A few robots.<br><span>A lot of curiosity.</span></h1>
+        <p class="intro">I'm an AI & Robotics master's student at UTN in Germany. I build things that see, listen, and occasionally push other things around.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">See what I've built</a><a class="quiet-link" href="https://github.com/arham061">Find me on GitHub</a></div>
+        <p class="hero-footnote">Currently somewhere between a research paper and a debugging session.</p>
+      </div>
+      <div class="orbit-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="planet"><span></span><i></i></div>
+        <span class="spark s1">+</span><span class="spark s2">✦</span><span class="spark s3">+</span><span class="spark s4">·</span>
+        <span class="orbit-label label-top">LEARNING BY BUILDING</span><span class="orbit-label label-bottom">EARTH, MOSTLY.</span>
+        <div class="orbit-note"><span class="signal"></span> curiosity: operational</div>
+      </div>
+    </section>
+
+    <div class="interlude wrap"><span>Computer vision</span><span class="divider">/</span><span>Audio learning</span><span class="divider">/</span><span>Robotics</span><span class="divider">/</span><span>Intelligent automation</span></div>
+
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">Things I've sent into the world</p><h2 id="work-title">Selected missions<span>.</span></h2></div><p>No galaxy-saving claims.<br>Just real projects, experiments, and lessons.</p></div>
+      <article class="project project-featured">
+        <div class="project-visual geo-visual">
+          <div class="visual-topline"><span>VISION / GEOLOCATION</span><span>12 COUNTRIES</span></div>
+          <svg class="geo-art" viewBox="0 0 640 350" role="img" aria-label="Illustration of locating a landscape photo on a coordinate grid">
+            <defs><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#86afa9" stroke-opacity=".17"/></pattern><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#b5d2c4"/><stop offset="1" stop-color="#e4d6a9"/></linearGradient></defs>
+            <rect width="640" height="350" fill="url(#grid)"/>
+            <circle cx="360" cy="175" r="124" fill="none" stroke="#8eb9a2" stroke-opacity=".25"/><circle cx="360" cy="175" r="88" fill="none" stroke="#8eb9a2" stroke-opacity=".3"/>
+            <g transform="translate(100 67) rotate(-7 140 100)"><rect x="-7" y="-7" width="264" height="199" rx="8" fill="#dce6dc"/><rect width="250" height="158" rx="3" fill="url(#sky)"/><circle cx="192" cy="35" r="15" fill="#ede1af"/><path d="M0 119L69 45L138 129L187 75L250 121V158H0Z" fill="#577d70"/><path d="M0 142L89 112L143 144L210 118L250 134V158H0Z" fill="#2e594e"/><path d="M100 158Q148 133 141 126Q179 135 162 158" fill="#a9c2ac"/><text x="13" y="179" fill="#344e42" font-family="monospace" font-size="11">one photo. where on earth?</text></g>
+            <path d="M385 174H477V99" fill="none" stroke="#e5d58a" stroke-width="2" stroke-dasharray="5 6"/><circle cx="478" cy="99" r="7" fill="#ebdc96"/><circle cx="478" cy="99" r="17" fill="none" stroke="#ebdc96" stroke-opacity=".5"/>
+            <text x="415" y="234" fill="#c3d6c6" font-family="monospace" font-size="13">PHOTO → COORDINATES</text>
+          </svg>
+          <div class="visual-bottomline"><span>MobileViTV2 + geographic cells</span><span class="coordinate-mark">⌖</span></div>
+        </div>
+        <div class="project-copy"><div class="project-meta"><span>Deep learning project</span><span>Individual</span></div><h3>Where on earth<br>was this taken?</h3><p>I trained a compact vision model to predict a photo's location across 12 European countries. Country predictions and geographic cells help turn pixels into coordinates.</p><div class="metric-row"><div><strong>199 km</strong><span>median validation error</span></div><div><strong>4.44M</strong><span>model parameters</span></div></div><p class="fine-print">Development validation result; accuracy varies on new images.</p><div class="project-links"><a href="https://huggingface.co/spaces/arham061/Image-geolocation-challenge">Try the demo</a><button class="text-button" data-project="geo">Behind the project <span>+</span></button></div></div>
+      </article>
+      <div class="project-grid">
+        <article class="project project-small">
+          <div class="project-visual thesis-visual"><img src="thesis-cover.jpg" alt="Our final presentation for AI-based rheumatic heart disease detection and classification" loading="lazy" width="1500" height="844"><span class="image-label">MY BACHELOR'S THESIS</span></div>
+          <div class="project-copy"><div class="project-meta"><span>Audio / deep learning</span><span>Team project</span></div><h3>Listening for a difference.</h3><p>Heart sounds, noisy recordings, and months of experiments. I developed and fine-tuned the DistilHuBERT classifier at the core of our thesis project.</p><div class="tags"><span>DistilHuBERT</span><span>PyTorch</span><span>Audio processing</span></div><div class="project-links"><a href="https://github.com/arham061/rhd-heart-sound-classification">Explore the repository</a><button class="text-button" data-project="thesis">The story <span>+</span></button></div></div>
+        </article>
+        <article class="project project-small">
+          <div class="project-visual quant-visual"><div class="visual-topline"><span>QUANTSPLAT</span><span>3D RECONSTRUCTION</span></div><div class="splat-scene" aria-hidden="true"><div class="splat-object"></div><span class="camera c1"></span><span class="camera c2"></span><span class="camera c3"></span><span class="camera c4"></span><span class="scene-axis"></span></div><div class="visual-bottomline"><span>Fewer bits. What happens to geometry?</span><span>W3A3 / W4A4</span></div></div>
+          <div class="project-copy"><div class="project-meta"><span>Computer vision / research</span><span>Team project</span></div><h3>A different angle on 3D.</h3><p>In QuantSplat, our team studied how aggressively quantizing VGGT affects 3D Gaussian Splatting—and whether camera correction and reliability estimates can help.</p><div class="tags"><span>VGGT</span><span>3D Gaussian Splatting</span><span>Quantization</span></div><div class="project-links"><a href="https://quantsplat.arham061.workers.dev/">Explore the demo</a><button class="text-button" data-project="quant">What we learned <span>+</span></button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="current wrap" aria-labelledby="current-title"><div class="current-label"><span class="signal"></span> IN THE WORKSHOP</div><div><h2 id="current-title">These are the robots<br>I'm looking for.</h2><p>Right now, I'm exploring object pushing with a LeKiwi robot in MuJoCo: simulation, teleoperation, and understanding why a seemingly simple push goes sideways. I'm also building my ROS 2 skills.</p><span class="status-label">Ongoing master's project · More experiments ahead</span></div><div class="robot-sketch" aria-hidden="true"><div class="robot-head"><i></i><i></i></div><div class="robot-neck"></div><div class="robot-base"><span></span></div><div class="robot-wheel left"></div><div class="robot-wheel right"></div><div class="push-cube"></div></div></section>
+
+    <section class="about wrap" id="about" aria-labelledby="about-title"><div><p class="eyebrow">The human behind the commits</p><h2 id="about-title">Hi, I'm Arham.<br><span>Still figuring things out.<br>Still building.</span></h2></div><div class="about-copy"><p>I'm doing my master's in AI and Robotics at the University of Technology Nuremberg. Before that, I studied computer science at GIKI in Pakistan and worked in intelligent automation.</p><p>I enjoy the part after the first promising result: trying another approach, finding the odd failure case, and making sense of what actually happened. My projects have taken me from heart sounds to image geolocation to robot simulation.</p><p>Outside the debugging loop, I occasionally go climbing. And yes, the Star Wars references are intentional.</p><div class="toolbox"><span class="eyebrow">Often within arm's reach</span><p>Python · PyTorch · Hugging Face<br>MuJoCo · ROS 2 · UiPath · Git</p></div><a class="quiet-link" href="https://github.com/arham061/LearningRobotics-ROS2">My ROS 2 learning notes</a></div></section>
+
+    <section class="contact wrap" id="contact"><p class="eyebrow">End of transmission. Start of a conversation?</p><h2>Have something<br>interesting in mind<span>?</span></h2><p>AI, robotics, research, or a problem worth figuring out.<br>I'm happy to talk.</p><div class="contact-links"><a class="button primary" href="mailto:arham061@gmail.com">Say hello</a><a href="https://www.linkedin.com/in/arhamshahzad/">LinkedIn</a><a href="https://github.com/arham061">GitHub</a></div></section>
+  </main>
+  <footer class="wrap"><span>Arham Shahzad <span class="footer-year">2026</span></span><span>Built on Earth. No hyperdrive required.</span><a href="#home">Back to the top</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close project details">×</button><p class="eyebrow" id="dialog-kicker"></p><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
+</body>
+</html>
