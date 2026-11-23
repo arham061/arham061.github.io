@@ -22,3 +22,15 @@ dialog.addEventListener('click', event => {
   if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
 });
 dialog.addEventListener('close', () => { document.body.classList.remove('dialog-open'); opener?.focus(); });
+
+const motionButton = document.querySelector('.motion-toggle');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+function syncMotionLabel() {
+  const paused = document.body.classList.contains('orbit-paused');
+  motionButton.textContent = reducedMotion.matches ? 'Orbit motion disabled' : (paused ? 'Resume orbit' : 'Pause orbit');
+  motionButton.disabled = reducedMotion.matches;
+  motionButton.setAttribute('aria-pressed', String(paused || reducedMotion.matches));
+}
+motionButton.addEventListener('click', () => {document.body.classList.toggle('orbit-paused'); syncMotionLabel();});
+reducedMotion.addEventListener('change', syncMotionLabel);
+syncMotionLabel();
